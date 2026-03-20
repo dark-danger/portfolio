@@ -1,17 +1,34 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
   return (
     <main className={styles.container}>
       {/* Navigation */}
       <nav className={styles.navbar}>
         <div className={styles.logo}>KIRTI SHARMA</div>
-        <div className={styles.navLinks}>
-          <a href="#projects">Work</a>
-          <a href="#services">Expertise</a>
-          <a href="#about">About</a>
-          <a href="#contact" className={styles.contactBtn}>Contact</a>
+        
+        {/* Mobile Menu Toggle */}
+        <button className={styles.menuToggle} onClick={toggleMenu} aria-label="Toggle menu">
+          <div className={`${styles.hamburger} ${isMenuOpen ? styles.active : ""}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+
+        <div className={`${styles.navLinks} ${isMenuOpen ? styles.navOpen : ""}`}>
+          <a href="#projects" onClick={() => setIsMenuOpen(false)}>Work</a>
+          <a href="#services" onClick={() => setIsMenuOpen(false)}>Expertise</a>
+          <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
+          <a href="#contact" className={styles.contactBtn} onClick={() => setIsMenuOpen(false)}>Contact</a>
         </div>
       </nav>
 
