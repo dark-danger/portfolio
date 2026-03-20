@@ -41,9 +41,9 @@ export default function Home() {
             <br /> Life and <span className={styles.accent}>Structure</span>.
           </h1>
           <p className={styles.heroBio}>
-            At 22, I bring a fresh, dynamic perspective to architecture and design, 
-            merging minimalist aesthetics with functional planning to create sustainable 
-            environments.
+            An Architect and Interior Designer dedicated to merging minimalist aesthetics 
+            with structural precision to develop innovative and sustainable 
+            architectural solutions.
           </p>
           <div className={styles.heroActions}>
             <a href="#projects" className={styles.primaryBtn}>Explore Projects</a>
@@ -122,14 +122,14 @@ export default function Home() {
           <div className={styles.aboutText}>
             <h2>About <span className={styles.accent}>Kirti</span></h2>
             <p>
-              Born with a passion for structure and design, I specialize in creating 
-              spaces that are not just visually stunning but also deeply functional. 
-              My approach is rooted in the belief that good architecture has the power 
-              to improve the quality of daily life.
+              Professional Architect and Interior Designer with a focus on delivering 
+              high-impact, sustainable solutions through minimalist design and precision 
+              planning. My methodology is defined by integrating functional efficiency 
+              with refined aesthetics to meet modern professional standards.
             </p>
             <div className={styles.statsRow}>
               <div>
-                <strong>22</strong>
+                <strong>21</strong>
                 <p>Years Old</p>
               </div>
               <div>
